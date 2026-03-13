@@ -16,7 +16,7 @@ This platform is designed to be open-sourced and easily deployable by NGOs and g
 
 ## 🛠️ Configuration
 
-Set the following environment variables in your deployment environment (e.g., AI Studio Settings or `.env` file):
+Set the following environment variables in your deployment environment (e.g.`.env` file):
 
 ```env
 # Google Maps
@@ -47,6 +47,3 @@ cd functions
 npm install
 firebase deploy --only functions
 ```
-
-## 🤝 Contributing
-This project is open-source. Feel free to fork it on [Google Cloud Source Repositories](https://source.cloud.google.com/) or GitHub to add features like SMS alerts or multi-language support.
