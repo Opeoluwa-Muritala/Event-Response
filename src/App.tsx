@@ -268,6 +268,19 @@ export default function App() {
     if (window.location.pathname === "/admin") return "admin";
     return "landing";
   });
+useEffect(() => {
+  const handlePopState = () => {
+    const currentPath = window.location.pathname;
+    if (currentPath === "/admin") {
+      setView("admin");
+    } else {
+      setView("landing");
+    }
+  };
+
+  window.addEventListener("popstate", handlePopState);
+  return () => window.removeEventListener("popstate", handlePopState);
+}, []);
   const [isAdmin, setIsAdmin] = useState(false);
   const [adminEmail, setAdminEmail] = useState("");
   const [adminPass, setAdminPass] = useState("");
