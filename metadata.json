@@ -1,0 +1,5 @@
+{
+  "name": "Event Response Map",
+  "description": "Real-time event mapping and volunteer coordination platform.",
+  "requestFramePermissions": ["geolocation", "camera"]
+}
